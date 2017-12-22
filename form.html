@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elements</title>
+</head>
+
+<body>
+    <form>
+        
+        <input list="languages">
+        <datalist id="languages">
+            <option>Html</option>
+            <option>Css</option>
+            <option>Javascript</option>
+            <option>Jquery</option>
+            <option>bootstrap</option>
+        </datalist>
+        <input list="color" id="myID">
+        <datalist id="color">
+            <option>red</option>
+            <option>blue</option>
+            <option>yellow</option>
+            <option>green</option>
+            <option>black</option>
+        </datalist>
+        <select>
+            <option value="0">--Select City--</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="channi">channi</option>
+            <option value="Goa">Goa</option>
+            <option value="Nagpur">Nagpur</option>
+        </select>
+        <textarea cols="25" rows="3">
+            
+        </textarea>
+    </form>
+    
+</body>
+<script>
+    var color = document.getElementById("myID");
+    color.onchange = function(){
+        var myclr = color.value;
+        console.log(myclr);
+        document.body.style.backgroundColor = myclr;
+    }
+</script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input type</title>
+    <style>
+        input{
+            width: 50%;
+            background-color: lightpink;
+            padding: 10px;
+            border-style: none;
+            border:1px solid black;
+            border-radius: 5px;
+            font-size: 22px;
+            color: darkblue;
+            text-transform: uppercase;
+        }
+        input:hover{
+            background-color: lightblue;
+        }
+        label{
+            width:130px;
+            display: inline-block;
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+  <form action="data.php" method="get">
+   <p><label for="Name" >Enter Name : </label><input type="text" name="name" autocomplete="off"> </p>
+   <p><label for="address">Enter Address : </label><input type="text" value="Codekul" name="address" autocomplete="off"></p>
+   <p><input type="text" placeholder="Enter Name" name="ok" autocomplete="off"></p>
+   <p><input type="text" name="something" placeholder="Enter Name" maxlength="3">
+   </p>
+   <p>
+       <input type="text" value="123654" disabled>
+   </p>
+   <p>
+       <input type="text" value="9545896226" readonly>
+   </p>
+   <p>
+       <input type="text" placeholder="Enter Qualification" required>
+   </p>
+   <p>
+       <input type="number" max="25" min="1" step="3" placeholder="Enter number" name="Number" id="" class="">
+   </p>
+   <p>
+       <input type="date" placeholder="DD/MM/YYYY" name="date">
+   </p>
+   <p>
+     <label for>HTML :</label>  <input type="checkbox" value="checked"></p>
+     <p><label for>Css :</label>  <input type="checkbox">
+   </p>
+   <p>
+       <input type="color">
+   </p>
+   <p>
+       <input type="datetime-local">
+   </p>
+   <p>
+       <input type="email">
+   </p>
+   <p>
+       file : <input type="file">
+   </p>
+   <p>
+       <input type="hidden" value="123456" name="hidden">
+   </p>
+    <p>
+       <input type="image" src="../Bootstrap_Template/images/slider1.jpeg" height="30px" style="padding: 0px;">
+   </p>
+   <p>
+       <input type="month">
+   </p>
+   <p>
+       <input type="password">
+   </p>
+   <p>
+       male<input type="radio" name="radio"></p>
+       <p>
+       female<input type="radio" name="radio">
+   </p>
+
+       <p><input type="range" min="1" max="100" value="5"></p>
+       <p>
+           <input type="search">
+       </p>
+       <p><input type="tel" placeholder="tel"></p>
+       <p>
+           <input type="time">
+       </p>
+       <p>
+           <input type="url" placeholder="Url">
+       </p>
+       <p>
+           <input type="week">
+       </p>
+
+   <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, maxime!
+   </p>
+   <p>
+       <input type="button" value="Submit">
+   </p>
+  
+   <p>
+       <input type="submit">
+   </p>
+   <p>
+       <input type="reset">
+   </p>
+</form>
+</body>
+</html>
