@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div {
+            font-size: 25px;
+            color: darkblue;
+            padding: 10px;
+            background-color: lightpink;
+        }
+
+        .top marquee,
+        .bottom marquee {
+            height: 250px;
+            width: 500px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <marquee direction="left">
+            Some content for add
+        </marquee>
+    </div>
+    <div>
+        <marquee direction="right">
+            Some content for add
+        </marquee>
+    </div>
+    <div class="top">
+        <marquee direction="up" scrollamount="2" scrolldelay="10">
+            Some content for add
+        </marquee>
+        <marquee direction="up" scrollamount="5" scrolldelay="100">
+            Some content for add
+        </marquee>
+        <marquee direction="up" scrolldelay="10">
+            Some content for add
+        </marquee>
+    </div>
+    <div class="bottom">
+        <marquee direction="down">
+            Some content for add
+        </marquee>
+    </div>
+    <div>
+        <marquee scrollamount="10" behavior="scroll">
+            <img src="../Bootstrap_Template/images/s1.jpeg" height="150" width="150"></marquee>
+
+        <marquee scrollamount="26" behavior="slide"><img src="../Bootstrap_Template/images/s2.png" height="150" width="150"></marquee>
+
+        <marquee scrollamount="50" behavior="alternate"> <img src="../Bootstrap_Template/images/s3.jpeg" height="150" width="150"></marquee>
+    </div>
+
+
+</body>
+
+</html>
