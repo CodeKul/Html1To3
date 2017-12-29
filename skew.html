@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skew</title>
+    <style>
+    
+        div{
+            height: 250px;
+            width: 250px;
+            margin: 150px;
+            padding: 25px;
+            background-color: dodgerblue;
+            color: white;
+            text-align: center;
+            border:2px solid red;
+            transform: skew(15deg,25deg);
+        }
+        .both {
+	transform: skew(-15deg,-25deg);
+}
+    </style>
+</head>
+<body>
+    <div>
+        this is skew only
+    </div>
+    <div class="both">
+        neg skew
+    </div>
+</body>
+</html>

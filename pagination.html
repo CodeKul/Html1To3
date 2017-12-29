@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination</title>
+    <style>
+        .pagination {
+            margin: 0px;
+            padding: 0px;
+            display: inline-block;
+            
+        }
+
+        .pagination li {
+            display: inline;
+        }
+        .pagination li a{
+	        padding: 8px 16px;
+            font-size: 22px;
+            border:1px solid lightgray;
+            border-radius: 5px;
+            text-decoration: none;
+            color: darkblue;
+            
+        }
+        .pagination li a.active{
+	        background-color: lightgreen;
+        }
+        .pagination li a:hover{
+	        background-color: lightpink;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <ul class="pagination">
+        <li><a href="#">&lt;</a></li>
+        <li><a href="overflow_properties.html" class="active">1</a></li>
+        <li><a href="images.html">2</a></li>
+        <li><a href="position.html">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="nav.html">7</a></li>
+        <li><a href="column_perperties.html">8</a></li>
+        <li><a href="color.html">9</a></li>
+        <li><a href="#">&gt;</a></li>
+
+
+    </ul>
+</body>
+
+</html>
