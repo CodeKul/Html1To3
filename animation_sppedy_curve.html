@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animation</title>
+		<style>
+			div{
+				height: 100px;
+				width:200px;
+				background-color: lightblue;
+				border: 2px solid #adef00;
+                position: relative;
+                animation: mytest 5s infinite;
+			}
+            #div1{
+                animation-timing-function : linear;
+            }
+            #div2{
+                animation-timing-function : ease;
+            }
+            #div3{
+                animation-timing-function : ease-in;
+            }
+            #div4{
+                animation-timing-function : ease-out;
+            }
+            #div5{
+               animation-timing-function : ease-in-out; 
+            }
+			@keyframes mytest{
+				from{left: 0px;}
+				to{left: 250px;}
+				/*0%{background-color: lightblue;left:0px;top:0px;}
+				25%{background-color: lightpink;left:200px;top:0px;}
+				50%{background-color: lightgreen;left:200px;top:200px;}
+				50%{background-color: darkturquoise;left:0px;top:200px;}
+				100%{background-color: blueviolet;left:0px;top:0px;}*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			linear
+		</div>
+		<div id="div2">
+			ease
+		</div>
+        <div id="div3">
+			ease-in
+		</div>
+        <div id="div4">
+			ease-out
+		</div>
+        <div id="div5">
+			ease-in-out
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+    <style>
+        div{
+            height: 150px;
+            width:150px;
+            margin: 100px;
+            background-color: coral;
+            border:2px solid blue;
+            transition: width 2s height 2s tranform 2s;
+            transition-delay: 3s;
+            transition-duration: 10s;
+        }
+        div:hover{
+            width: 250px;
+            height: 250px;
+            transform: rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this is transition property
+    </div>
+</body>
+</html>

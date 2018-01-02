@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+    <style>
+        div {
+            height: 250px;
+            width: 250px;
+            position: absolute;
+        }
+
+        #blue {
+            background-color: blue;
+            z-index: 10;
+        }
+
+        #yellow {
+            background-color: yellow;
+            left: 25px;
+            top: 25px;
+            z-index: 11;
+        }
+
+        #red {
+            background-color: red;
+            left: 50px;
+            top: 50px;
+/*            z-index: 12;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="blue">
+        this is blue Block
+    </div>
+    <div id="yellow">
+        this is yellow block
+    </div>
+    <div id="red">
+        this is red block
+    </div>
+</body>
+
+</html>

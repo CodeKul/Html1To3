@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rotate </title>
+    <style>
+        div{
+            background-color: aqua;
+            color: darkblue;
+            height: 150px;
+            width: 150px;
+            border:2px solid red;
+            transform: rotate(30deg);
+            margin: 50px;
+            position: absolute;
+            z-index: 11;
+        }
+        .myClass{
+            background-color: lightpink;
+            transform: rotate(60deg);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       this is rotate Property 
+    </div>
+    <div class="myClass">
+       this is rotate Property 
+    </div>
+</body>
+</html>

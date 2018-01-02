@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transition Speedy Curve</title>
+    <style>
+        div {
+            height: 100px;
+            width: 150px;
+            background-color: lightgreen;
+            border: 2px solid red;
+            margin: 25px;
+            transform: width 2s;
+            transition-duration: 1s;
+            transition-delay: 1s;
+        }
+
+        #div1 {
+            transition-timing-function: ease;
+        }
+
+        #div2 {
+            transition-timing-function: linear;
+        }
+
+        #div3 {
+            transition-timing-function: ease-in;
+        }
+
+        #div4 {
+            transition-timing-function: ease-out;
+        }
+
+        #div5 {
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        normal one
+    </div>
+    <div id="div1">
+        ease
+    </div>
+    <div id="div2">
+        linear
+    </div>
+    <div id="div3">
+        ease-in
+    </div>
+    <div id="div4">
+        ease-out
+    </div>
+    <div id="div5">
+        ease-in-out
+    </div>
+    <div id="div6">
+
+    </div>
+</body>
+
+</html>

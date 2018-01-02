@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animation direction</title>
+    <style>
+        .myclass {
+            height: 200px;
+            width: 200px;
+            background-color: darkmagenta;
+            border: 2px solid yellow;
+            position: relative;
+            /*animation-name: myAnimi;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-iteration-count:infinite;
+            animation-direction:reverse;*/
+            animation: myAnimi 1s infinite 3s reverse;
+        }
+
+        @keyframes myAnimi{
+            0%{
+                background-color: darkblue;
+                top:0px;
+                left: 0px;
+            }
+            25%{
+                background-color: darkgoldenrod;
+                top:0px;
+                left: 200px;
+            }
+            50%{
+                background-color: darkred;
+                top:200px;
+                left: 200px;
+            }
+             75%{
+                background-color: darkgray;
+                top:200px;
+                left: 0px;
+            }
+            100%{
+                background-color: deeppink;
+                top:0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="myclass">
+			
+		</div>
+</body>
+
+</html>
